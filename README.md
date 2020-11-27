@@ -4,7 +4,8 @@ Gluh .Net Code Challenge
 Open the visual studio solution named gluh.codingtest.sln
  from the zip below.
 
-This purpose of this C# class library is to calculate the optimal shipping amount for a given sales order. ‘Optimal’ in this case means the most expensive shipping rate that meets the criteria of a given sales order. 
+This purpose of this C# class library is to calculate the optimal shipping amount for a given sales order. 
+‘Optimal’ in this case means the most expensive shipping rate that meets the criteria of a given sales order. 
 
 
 There are 3 types of shipping rates that can apply:
@@ -19,7 +20,8 @@ Your goal is to complete the ShippingCalculator.Calculate() method. This method 
 You are also expected to create the necessary unit tests to provide full coverage of the shipping calculator.
 
 
-Before starting, ensure you review all the properties of the Database classes, taking note of important fields that may be required. Record any assumptions in a comment at the top of the ShippingCalculator class.
+Before starting, ensure you review all the properties of the Database classes, taking note of important fields that may be required. 
+Record any assumptions in a comment at the top of the ShippingCalculator class.
 
 
 How do I submit my solution?
