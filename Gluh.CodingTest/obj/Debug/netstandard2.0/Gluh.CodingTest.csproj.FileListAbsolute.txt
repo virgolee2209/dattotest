@@ -1,9 +1,0 @@
-C:\Users\AndrewRauber\OneDrive\Technical Test\Mid Dev\Visual Studio Project\Gluh.CodingTest\obj\Debug\netstandard2.0\Gluh.CodingTest.csprojAssemblyReference.cache
-C:\Users\AndrewRauber\OneDrive\Technical Test\Mid Dev\Visual Studio Project\Gluh.CodingTest\obj\Debug\netstandard2.0\Gluh.CodingTest.csproj.CoreCompileInputs.cache
-C:\Users\AndrewRauber\OneDrive\Technical Test\Mid Dev\Visual Studio Project\Gluh.CodingTest\obj\Debug\netstandard2.0\Gluh.CodingTest.AssemblyInfoInputs.cache
-C:\Users\AndrewRauber\OneDrive\Technical Test\Mid Dev\Visual Studio Project\Gluh.CodingTest\obj\Debug\netstandard2.0\Gluh.CodingTest.AssemblyInfo.cs
-C:\Users\AndrewRauber\OneDrive\Technical Test\Mid Dev\Visual Studio Project\Gluh.CodingTest\bin\Debug\netstandard2.0\Gluh.CodingTest.deps.json
-C:\Users\AndrewRauber\OneDrive\Technical Test\Mid Dev\Visual Studio Project\Gluh.CodingTest\bin\Debug\netstandard2.0\Gluh.CodingTest.dll
-C:\Users\AndrewRauber\OneDrive\Technical Test\Mid Dev\Visual Studio Project\Gluh.CodingTest\bin\Debug\netstandard2.0\Gluh.CodingTest.pdb
-C:\Users\AndrewRauber\OneDrive\Technical Test\Mid Dev\Visual Studio Project\Gluh.CodingTest\obj\Debug\netstandard2.0\Gluh.CodingTest.dll
-C:\Users\AndrewRauber\OneDrive\Technical Test\Mid Dev\Visual Studio Project\Gluh.CodingTest\obj\Debug\netstandard2.0\Gluh.CodingTest.pdb

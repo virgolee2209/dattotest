@@ -31,6 +31,8 @@ bld/
 [Ll]og/
 [Ll]ogs/
 Gluh.CodingTest/obj/
+Gluh.CodingTest/obj/Debug/netstandard2.0/
+Gluh.CodingTest/bin/
 
 # Visual Studio 2015/2017 cache/options directory
 .vs/
