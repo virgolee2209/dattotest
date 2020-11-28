@@ -43,7 +43,7 @@ namespace Gluh.CodingTest
         public static decimal GetShippingApiRate(List<ShippingAPIRate> shippingAPIRates, SalesOrder salesOrder)
         {
             decimal totalWeight = GetTotalWeightOfOrder(salesOrder);
-            decimal apiRate = new ShippingApiClient().GetRate(totalWeight);
+            
             ShippingAPIRate rate = null;
             foreach (ShippingAPIRate shippingApiRate in shippingAPIRates)
             {
@@ -55,8 +55,10 @@ namespace Gluh.CodingTest
                     break;
                 }
             }
+            decimal apiRate = 0;
             if (rate != null)
             {
+                apiRate = new ShippingApiClient().GetRate(totalWeight);
                 if (rate.RateAdjustmentPercent.HasValue)
                 {
                     apiRate = apiRate * (1 - (rate.RateAdjustmentPercent.Value / 100));

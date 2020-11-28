@@ -11,10 +11,13 @@ namespace Gluh.CodingTest
         /// List of assumptions:
         /// * If sales order are empty => throw exception.
         /// * if product type is not physical, there is no weight for that product.
+        /// * SaleOrderLine Quantity is always provided.
         /// * SalesOrderLine Price is the total price of all products in that line, not a single product price.
+        /// * Only using rate from 3rd party API if Api rate list are not empty.
         /// * RateAdjustmentPrice for API is the discounted rate after getting rate from API.
         /// * RateAdjustmentPercentage for API is the discounted rate percentage after getting rate from API.
-        /// * API Rate can have both adjustment price and adjustment percentage
+        /// * API Rate can have both adjustment price and adjustment percentage 
+        /// * And in the case that rate has both values, percentage discount will be calculated first
         /// * Optimal rate is the maximum of all 3 kinds of rate after all calculations.
         /// </summary>
         private List<ShippingPriceRate> _priceRates;

@@ -42,8 +42,8 @@ namespace ShipCalculator.Tests
         public void Calculate_EmptySaleOrder_ExceptionThrown()
         {
             SalesOrder salesOrder = new SalesOrder();
-            Exception exception=Assert.ThrowsException<Exception>(()=>shippingCalculator.Calculate(salesOrder));
-            Assert.AreEqual("Sale order is empty", exception.Message);
+            Exception exception=Assert.ThrowsException<Exception>(()=>shippingCalculator.Calculate(salesOrder), "Sale order is empty");
+            //Assert.AreEqual("Sale order is empty", exception.Message);
         }
         [TestMethod]
         public void Calculate_NoWeightPriceMin_PriceRateMin()
@@ -107,7 +107,25 @@ namespace ShipCalculator.Tests
             Assert.AreEqual(apiRate, shippingRate);
         }
 
-        
-        
+        [TestMethod]
+        public void Calculate_DefaultConstructorWeight100_ApiRateFor100()
+        {
+            shippingCalculator = new ShippingCalculator();
+            decimal testWeight = 100;
+            SalesOrder salesOrder = new SalesOrder();
+            SalesOrderLine line = new SalesOrderLine();
+            line.Product = new Product() { Type = ProductType.Physical, Weight = testWeight };//make it physical=> has weight
+            line.Quantity = 1;
+            line.Price = 50;
+            salesOrder.Lines = new List<SalesOrderLine>();
+            salesOrder.Lines.Add(line);
+
+            decimal apiRate = new ShippingApiClient().GetRate(testWeight);//should have no adjustment
+
+
+            decimal shippingRate = shippingCalculator.Calculate(salesOrder);
+            Assert.AreEqual(apiRate, shippingRate);
+        }
+
     }
 }
