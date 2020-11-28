@@ -6,10 +6,12 @@ namespace Gluh.CodingTest
 {
     /// <summary>
     /// Simulates calculating a shipping rate from a 3rd party API
+    /// Hale: removed the first 2 params for easier calling as they are not used inside function anyway
     /// </summary>
     public class ShippingApiClient
     {
-        public decimal GetRate(decimal postalCodeFrom, decimal postalCodeTo, decimal weight)
+        //public decimal GetRate(decimal postalCodeFrom, decimal postalCodeTo, decimal weight)
+        public decimal GetRate(decimal weight)
         {
             if (weight <= 5)
             {
