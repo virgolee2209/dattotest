@@ -9,12 +9,12 @@ namespace Gluh.CodingTest.Database
         /// <summary>
         /// Minimum weight for this shipping rate to apply
         /// </summary>
-        public decimal WeighMin { get; set; }
+        public decimal WeightMin { get; set; }
 
         /// <summary>
         /// Maximum weight for this shipping rate to apply
         /// </summary>
-        public decimal? WeighMax { get; set; }
+        public decimal? WeightMax { get; set; }
 
         /// <summary>
         /// Shipping rate in dollars
